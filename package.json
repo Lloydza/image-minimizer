@@ -1,0 +1,20 @@
+{
+  "name": "image-minimizer",
+  "version": "0.0.1",
+  "description": "Makes tiny images, for a blurring effect.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lloydza/image-minimizer.git"
+  },
+  "author": "Lloyd Gray",
+  "homepage": "https://github.com/Lloydza/image-minimizer",
+  "dependencies": {
+    "pg": "^7.4.0",
+    "request": "^2.83.0",
+    "sharp": "^0.18.4"
+  }
+}

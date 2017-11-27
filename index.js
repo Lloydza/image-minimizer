@@ -99,6 +99,12 @@ function retrieveMinimizeAndSaveImages() {
 	console.log("Retrieving Images...");
 
 	imageRepository.getImages(function (images) {
+		if (!images || images.length == 0) {
+			console.log("");
+			console.log("No images to minize.");
+			return;
+		}
+		
 		console.log("");
 		console.log("Done. Minimizing Images...");
 		console.log("");

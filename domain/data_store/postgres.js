@@ -10,14 +10,11 @@ postgres.connect = function (command, data, callback) {
   client.query(command, data)
    .then((result) => {
     if (callback) {
-      if (result && result.rows && result.rows.length > 1) {
+      if (result && result.rows && result.rows.length > 0) {
         callback(result.rows);
       }
-      else if (result && result.rows && result.rows.length == 1) {
-        callback(result.rows[0]);
-      }
       else {
-        callback(null)
+        callback([])
       }
     }
   })

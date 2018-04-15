@@ -1,0 +1,56 @@
+.container {
+	margin: 20px;
+	padding: 20px;
+	border: 3px solid red;
+}
+
+.button {
+	border-radius: 6px;
+	padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+    background-color: #999999;
+	border: 1px solid #808080;
+	box-shadow: 3px 3px 3px #737373;
+	margin: 10px;
+	width: 160px;
+}
+
+.button:hover {
+	background-color: #666666;
+}
+
+.placeholder {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+.placeholder img.loaded {
+  opacity: 1;
+}
+
+.imgSmall {
+  filter: blur(50px);
+  /* this is needed so Safari keeps sharp edges */
+  transform: scale(1);
+  opacity: 1;
+}
+
+.padded {
+  padding-bottom: 66.6%;
+}
